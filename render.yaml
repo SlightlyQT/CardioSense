@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cardiosense-ai-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /docs
+    autoDeploy: true
